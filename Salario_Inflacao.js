@@ -1,3 +1,5 @@
+import rl from 'readline-sync';
+
 const lista_salarios = [
     {ano: 2010, salario: 510.00},
     {ano: 2011, salario: 545.00},
@@ -24,6 +26,15 @@ const lista_inflacao = [
     {ano: 2018, inflacao: 3.75},
     {ano: 2019, inflacao: 4.31},
     {ano: 2020, inflacao: 4.52},
-
 ]
+
+console.log("Escolha uma das alternativas:\n");
+
+console.log("1 - Listar os salários mínimos de 2010 à 2020:");
+console.log("2 - Listar o índice IPCA  de 2010 à 2020:");
+console.log("3 - Comparação entre o percentual de aumento salarial e o IPCA\n");
+
+let opcao = rl.question("Digite a opção escolhida: ")
+console.log("\n Você escolheu a opção " + opcao);
+
 
